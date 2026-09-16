@@ -173,9 +173,8 @@ $resultsWithAlerts = $results |
 # Add table only when vulnerabilities exist
 if (@($resultsWithAlerts).Count -gt 0) {
 
-    $table += "| Repository | Critical | High | Medium | Low | Total |"
+    $table += "| Repository | 🔴 Critical | 🟠 High | 🟡 Medium | 🟢 Low | 🔵 Total |"
     $table += "|---|---:|---:|---:|---:|---:|"
-
     foreach ($item in $resultsWithAlerts) {
 
         $table += "| $($item.Repository) | $($item.Critical) | $($item.High) | $($item.Medium) | $($item.Low) | $($item.Total) |"
