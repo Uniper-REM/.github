@@ -1,4 +1,4 @@
-#Support Cross Function Organization
+# Support Cross Function Organization
 
 Welcome to **REM**! We are committed to excellence in development practices, code quality, security, and repository management.
 
@@ -40,12 +40,4 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 | welcome-workflow | - | 1 | 0 | 0 |
 
 <!-- REPO_TABLE_END -->
-
-
-
-
-
-
-
-
 
