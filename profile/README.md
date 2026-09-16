@@ -44,9 +44,10 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 # Code Scanning Security
 
 
+
 <!-- CODE-SCANNING-START -->
 
-| Repository | Critical | High | Medium | Low | Total |
+| Repository | 🔴 Critical | 🟠 High | 🟡 Medium | 🟢 Low | 🔵 Total |
 |---|---:|---:|---:|---:|---:|
 | Support-Cross-Function-Dashboard | 0 | 2 | 71 | 0 | 73 |
 | **Organization Total** | **0** | **2** | **71** | **0** | **73** |
@@ -67,6 +68,7 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 | **Organization Total** | **9** | **0** | **9** |
 
 <!-- SECRET-SCANNING-END -->
+
 
 
 
