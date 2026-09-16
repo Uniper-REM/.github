@@ -5,4 +5,10 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 ## Repositories Overview
 
 <!-- REPO_TABLE_START -->
+
+| Repository | Language | Branches | Tags | Open PRs |
+|------------|----------|----------|------|----------|
+
+
 <!-- REPO_TABLE_END -->
+
