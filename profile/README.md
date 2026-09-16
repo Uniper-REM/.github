@@ -1,4 +1,6 @@
 # Support Cross Function Organization
+<span style="color: red;">This text is red</span>
+
 
 Welcome to **REM**! We are committed to excellence in development practices, code quality, security, and repository management.
 
