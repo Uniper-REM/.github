@@ -41,7 +41,7 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 
 <!-- REPO_TABLE_END -->
 
-# Code Scanning Security
+#  🛡️ Code Scanning Security
 
 
 
@@ -54,7 +54,7 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 
 <!-- CODE-SCANNING-END -->
 
-# Secret Scanning Security
+#  🔐 Secret Scanning Security
 
 
 
