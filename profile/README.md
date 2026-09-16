@@ -8,9 +8,39 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 
 | Repository | Language | Branches | Tags | Open PRs |
 |------------|----------|----------|------|----------|
-
+| .github-workflows-training | - | 1 | 0 | 0 |
+| ADO_To_GH_Artifacts_Migration | - | 4 | 0 | 0 |
+| ADOtoGHA | - | 6 | 0 | 5 |
+| ADOtoGithubMigratorutility | TypeScript | 2 | 0 | 0 |
+| AI_Code_Review_Process | Python | 3 | 2 | 0 |
+| ai-endur-dashboard | Python | 1 | 2 | 0 |
+| ai-environment-management | Python | 12 | 2 | 0 |
+| ai-intelligent-devops | Python | 22 | 3 | 0 |
+| ai-internal-database-platform | TypeScript | 2 | 2 | 0 |
+| ai-patchmanagement | Python | 6 | 2 | 0 |
+| appcode-templates | - | 3 | 0 | 0 |
+| dvops-config | - | 1 | 0 | 0 |
+| EndurFenix | - | 1 | 0 | 0 |
+| EndurFenix-POC | Java | 95 | 62 | 0 |
+| GitHub_End_to_End_Development_POC | JavaScript | 3 | 0 | 1 |
+| Githubimporter | HTML | 52 | 4 | 18 |
+| Golden-image | - | 0 | 0 | 0 |
+| ModelExporter | C# | 12 | 2 | 0 |
+| python-template | Python | 2 | 2 | 0 |
+| scf_db | HTML | 39 | 5 | 2 |
+| scf-dba-demo | - | 2 | 0 | 0 |
+| SCFDashboard | HCL | 3 | 0 | 0 |
+| snyk34 | - | 1 | 0 | 0 |
+| SRE-Java-Scala-Host-API | Java | 3 | 0 | 0 |
+| Support-Cross-Function-Dashboard | HTML | 30 | 4 | 6 |
+| Support-Cross-Function-Dashboard- | HTML | 32 | 4 | 0 |
+| template | Python | 5 | 1 | 0 |
+| Terraform_azure_golden_templates | HCL | 3 | 2 | 0 |
+| test-multistage | - | 2 | 0 | 0 |
+| welcome-workflow | - | 1 | 0 | 0 |
 
 <!-- REPO_TABLE_END -->
+
 
 
 
