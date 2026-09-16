@@ -100,7 +100,8 @@ try {
         throw "GitHub API request failed."
     }
 
-    $repositories = $repoJson | ConvertFrom-Json | Where-Object { $_.name -ne ".github" }
+    $allRepositories = @($repoJson | ConvertFrom-Json)
+    $repositories = @($allRepositories | Where-Object { $_.name -ne ".github" })
 
 }
 catch {
@@ -110,12 +111,10 @@ catch {
     exit 1
 }
 
-if ($null -eq $repositories) {
+if ($allRepositories.Count -eq 0) {
     Write-Error "No repositories returned from GitHub."
     exit 1
 }
-
-$repositories = @($repositories)
 
 Write-Host "Repositories found: $($repositories.Count)"
 Write-Host ""
