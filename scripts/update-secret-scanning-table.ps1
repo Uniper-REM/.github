@@ -211,30 +211,47 @@ if ($null -eq $totalGeneric) {
 if ($null -eq $totalAll) {
     $totalAll = 0
 }
-
 # ============================================================
-# Build Markdown
-# ============================================================
-
-# ============================================================
-# Build Markdown
+# Build Markdown - only repositories with secrets
 # ============================================================
 
 $table = @()
 
-
 $table += ""
 $table += "<!-- SECRET-SCANNING-START -->"
 $table += ""
-$table += "| Repository | Default | Generic | Total |"
-$table += "|---|---:|---:|---:|"
 
-foreach ($item in $results | Sort-Object Repository) {
+# Only include repositories where at least one secret exists
+$resultsWithSecrets = $results |
+    Where-Object {
+        $_.Default -gt 0 -or
+        $_.Generic -gt 0 -or
+        $_.Total -gt 0
+    } |
+    Sort-Object Repository
 
-    $table += "| $($item.Repository) | $($item.Default) | $($item.Generic) | $($item.Total) |"
+if (@($resultsWithSecrets).Count -gt 0) {
+
+    $table += "| Repository | Default | Generic | Total |"
+    $table += "|---|---:|---:|---:|"
+
+    foreach ($item in $resultsWithSecrets) {
+
+        $table += "| $($item.Repository) | $($item.Default) | $($item.Generic) | $($item.Total) |"
+    }
+
+    $table += "| **Organization Total** | **$totalDefault** | **$totalGeneric** | **$totalAll** |"
+
+    Write-Host ""
+    Write-Host "Repositories with Secret Scanning findings: $(@($resultsWithSecrets).Count)"
 }
+else {
 
-$table += "| **Organization Total** | **$totalDefault** | **$totalGeneric** | **$totalAll** |"
+    $table += "_No open Secret Scanning alerts found._"
+
+    Write-Host ""
+    Write-Host "No repositories have open Secret Scanning alerts."
+}
 
 $table += ""
 $table += "<!-- SECRET-SCANNING-END -->"
