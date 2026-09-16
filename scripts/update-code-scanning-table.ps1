@@ -150,26 +150,52 @@ $totalAll = $totalCritical + $totalHigh + $totalMedium + $totalLow
 # Build Markdown table
 # ------------------------------------------------------------
 
+# ------------------------------------------------------------
+# Build Markdown table - only repositories with vulnerabilities
+# ------------------------------------------------------------
+
 $table = @()
 
 $table += ""
 $table += "<!-- CODE-SCANNING-START -->"
 $table += ""
-$table += "| Repository | Critical | High | Medium | Low | Total |"
-$table += "|---|---:|---:|---:|---:|---:|"
 
-foreach ($item in $results | Sort-Object Repository) {
+# Only include repositories where at least one severity has a value > 0
+$resultsWithAlerts = $results |
+    Where-Object {
+        $_.Critical -gt 0 -or
+        $_.High -gt 0 -or
+        $_.Medium -gt 0 -or
+        $_.Low -gt 0
+    } |
+    Sort-Object Repository
 
-    $table += "| $($item.Repository) | $($item.Critical) | $($item.High) | $($item.Medium) | $($item.Low) | $($item.Total) |"
+# Add table only when vulnerabilities exist
+if (@($resultsWithAlerts).Count -gt 0) {
+
+    $table += "| Repository | Critical | High | Medium | Low | Total |"
+    $table += "|---|---:|---:|---:|---:|---:|"
+
+    foreach ($item in $resultsWithAlerts) {
+
+        $table += "| $($item.Repository) | $($item.Critical) | $($item.High) | $($item.Medium) | $($item.Low) | $($item.Total) |"
+    }
+
+    $table += "| **Organization Total** | **$totalCritical** | **$totalHigh** | **$totalMedium** | **$totalLow** | **$totalAll** |"
+
+    Write-Host "Repositories with Code Scanning vulnerabilities: $(@($resultsWithAlerts).Count)"
 }
+else {
 
-$table += "| **Organization Total** | **$totalCritical** | **$totalHigh** | **$totalMedium** | **$totalLow** | **$totalAll** |"
+    $table += "_No open Code Scanning vulnerabilities found._"
+
+    Write-Host "No repositories have open Code Scanning vulnerabilities."
+}
 
 $table += ""
 $table += "<!-- CODE-SCANNING-END -->"
 
 $newTable = $table -join "`n"
-
 # ------------------------------------------------------------
 # README
 # ------------------------------------------------------------
