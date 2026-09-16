@@ -42,7 +42,41 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 <!-- REPO_TABLE_END -->
 
 
+<!-- CODE-SCANNING-START -->
 
+| Repository | Critical | High | Medium | Low | Total |
+|---|---:|---:|---:|---:|---:|
+| .github-workflows-training | 0 | 0 | 0 | 0 | 0 |
+| ADO_To_GH_Artifacts_Migration | 0 | 0 | 0 | 0 | 0 |
+| ADOtoGHA | 0 | 0 | 0 | 0 | 0 |
+| ADOtoGithubMigratorutility | 0 | 0 | 0 | 0 | 0 |
+| AI_Code_Review_Process | 0 | 0 | 0 | 0 | 0 |
+| ai-endur-dashboard | 0 | 0 | 0 | 0 | 0 |
+| ai-environment-management | 0 | 0 | 0 | 0 | 0 |
+| ai-intelligent-devops | 0 | 0 | 0 | 0 | 0 |
+| ai-internal-database-platform | 0 | 0 | 0 | 0 | 0 |
+| ai-patchmanagement | 0 | 0 | 0 | 0 | 0 |
+| appcode-templates | 0 | 0 | 0 | 0 | 0 |
+| dvops-config | 0 | 0 | 0 | 0 | 0 |
+| EndurFenix | 0 | 0 | 0 | 0 | 0 |
+| EndurFenix-POC | 0 | 0 | 0 | 0 | 0 |
+| GitHub_End_to_End_Development_POC | 0 | 0 | 0 | 0 | 0 |
+| Githubimporter | 0 | 0 | 0 | 0 | 0 |
+| Golden-image | 0 | 0 | 0 | 0 | 0 |
+| ModelExporter | 0 | 0 | 0 | 0 | 0 |
+| python-template | 0 | 0 | 0 | 0 | 0 |
+| scf_db | 0 | 0 | 0 | 0 | 0 |
+| scf-dba-demo | 0 | 0 | 0 | 0 | 0 |
+| SCFDashboard | 0 | 0 | 0 | 0 | 0 |
+| snyk34 | 0 | 0 | 0 | 0 | 0 |
+| SRE-Java-Scala-Host-API | 0 | 0 | 0 | 0 | 0 |
+| Support-Cross-Function-Dashboard | 0 | 2 | 71 | 0 | 73 |
+| Support-Cross-Function-Dashboard- | 0 | 0 | 0 | 0 | 0 |
+| template | 0 | 0 | 0 | 0 | 0 |
+| Terraform_azure_golden_templates | 0 | 0 | 0 | 0 | 0 |
+| test-multistage | 0 | 0 | 0 | 0 | 0 |
+| welcome-workflow | 0 | 0 | 0 | 0 | 0 |
+| **Organization Total** | **0** | **2** | **71** | **0** | **73** |
 
-
+<!-- CODE-SCANNING-END -->
 
