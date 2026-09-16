@@ -2,7 +2,7 @@
 
 Welcome to **REM**! We are committed to excellence in development practices, code quality, security, and repository management.
 
-## Repositories Overview
+## 📋 Repositories Overview
 
 <!-- REPO_TABLE_START -->
 
