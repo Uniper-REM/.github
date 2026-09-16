@@ -44,7 +44,6 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 # Code Scanning Security
 
 
-
 <!-- CODE-SCANNING-START -->
 
 | Repository | Critical | High | Medium | Low | Total |
@@ -53,6 +52,20 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 | **Organization Total** | **0** | **2** | **71** | **0** | **73** |
 
 <!-- CODE-SCANNING-END -->
+
+# Secret Scanning Security
+
+
+<!-- SECRET-SCANNING-START -->
+
+<!-- SECRET-SCANNING-END -->
+
+
+
+
+
+
+
 
 
 
