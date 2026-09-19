@@ -47,6 +47,7 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 
 
 
+
 <!-- CODE-SCANNING-START -->
 
 | Repository | 🔴 Critical | 🟠 High | 🟡 Medium | 🟢 Low | 🔵 Total |
@@ -72,6 +73,7 @@ Welcome to **REM**! We are committed to excellence in development practices, cod
 | **Organization Total** | **9** | **0** | **9** |
 
 <!-- SECRET-SCANNING-END -->
+
 
 
 
